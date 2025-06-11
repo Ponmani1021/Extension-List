@@ -2,4 +2,60 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/* Nav Bar theme place */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 78%);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.nav-bar nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-bar .theme .themeimg{
+    float: right;
+    background-color: hsl(226, 11%, 37%);
+    margin: auto;
+    padding: 15px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 78%);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Dark theme */
+body.dark{
+    background: linear-gradient( to bottom, hsl(227, 75%, 14%),hsl(226, 25%, 17%),hsl(225, 23%, 24%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+body.dark .nav-bar{
+   background-color: hsl(226, 11%, 37%) ;
+}
+
+body
+
+/* Light Theme */
+
+body.light .nav-bar{
+    background-color: hsl(200, 60%, 99%);
+}
+body.light{
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+    height: 100vh;
+}
+body.light .nav-bar .theme .themeimg{
+    background-color:hsl(226, 11%, 37%) ;
 }

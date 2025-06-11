@@ -7,7 +7,46 @@
     <link rel="stylesheet" href="EList.css">
 </head>
 <body>
-    
-    <script src="EList.js"></script>
+    <section class="nav-bar">
+        <nav>
+            <div>
+            <img src="../ExtensionList/images/logo.svg" alt="Logo">
+            </div>
+            <div class="theme">
+                <img src="../ExtensionList/images/icon-moon.svg" alt="Dark Mode" class="themeimg" onclick="themeChange()">
+                <!-- <img src="../ExtensionList/images/icon-sun.svg" alt="Light Mode" class="themeimg themeLight" onclick="themeChange()"> -->
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="tab-container">
+            <div class="tab-box">
+                <h1>Extension List</h1>
+                <ul>
+                    <li><button class="tab-btn">All</button></li>
+                    <li><button class="tab-btn">Active</button></li>
+                    <li><button class="tab-btn">Inactive</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script >
+        function themeChange(){
+    const body = document.body
+    const image = document.querySelector(".themeimg")
+
+    if(body.classList.contains("dark")){
+       body.classList.remove("dark")
+       body.classList.add("light")
+       image.src = "../ExtensionList/images/icon-moon.svg"
+    }
+    else{
+        body.classList.remove("light")
+        body.classList.add("dark")
+        image.src = "../ExtensionList/images/icon-sun.svg"
+    }
+}
+    </script>
 </body>
 </html>
